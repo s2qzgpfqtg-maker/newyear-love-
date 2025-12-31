@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ของขวัญปีใหม่ให้ตะเล็ก ❤️</title>
+<style>
+body{
+  background:#ffd6e8;
+  text-align:center;
+  font-family:sans-serif;
+}
+img{
+  width:180px;
+  border-radius:20px;
+  margin:10px;
+}
+button{
+  font-size:20px;
+  padding:15px 30px;
+  border-radius:20px;
+  border:none;
+  background:#ff4d88;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎆 สุขสันต์ปีใหม่นะคะแฟนเค้า 🎆</h1>
+
+<img src="img1.jpg">
+<img src="img2.jpg">
+
+<p>กดปุ่มนี้รับคำอวยพรจากเค้า 💖</p>
+
+<button onclick="randomMsg()">กดเย๊ย</button>
+
+<audio id="music" src="song.mp3"></audio>
+
+<script>
+function randomMsg(){
+  document.getElementById("music").play();
+
+  const msg = [
+    "สุขสันต์ปีใหม่นะตะเล็ก ❤️ อยู่กับเค้าไปนานๆเยยนะคะ",
+    "ขอบคุณที่เข้ามาเป็นความสุขของเค้านะแฟน 💕",
+    "ปีนี้เค้าขอให้หนูยิ้มเยอะๆ เค้าจะอยู่ข้างๆเสมอ 🫂",
+    "เค้ารักหนูมากขึ้นทุกวันเยยนะ 💖",
+    "ขอให้ปีนี้เป็นปีที่เรามีแต่ความทรงจำดีๆด้วยกันนะกั๊บ 🎁"
+  ];
+  alert(msg[Math.floor(Math.random()*msg.length)]);
+}
+</script>
+
+</body>
+</html>
